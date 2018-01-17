@@ -5,42 +5,37 @@
 	<title>{{ page.title }} &mdash; {{ site.name }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="{{ page.description | trim }}" />
-	<link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | relative_url }}?v={{ site.time | date: "%s" }}" />
+	<link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | absolute_url }}?v={{ site.time | date: "%s" }}" />
 </head>
 <body class="page-{{ page.name | slugify }}">
 	<div id="soul">
 		<header id="header">
 			<h1><a href="{{ site.url }}">{{ site.name }}</a></h1>
-
-			<nav>
-				<ul>
-					<li>
-						<a href="{{ site.github.repository_url }}">Contribute on GitHub</a>
-					</li>
-				</ul>
-			</nav>
 		</header>
 
-		<article>
+		<article id="content-wrap">
 			<h1 class="entry-title">{{ page.title }}</h1>
 
-			{{ content }}
-
-			<footer class="meta">
-				<p><a href="{{ site.github.repository_url }}/blob/master/docs/{{ page.path }}">Edit this page on GitHub</a></p>
-			</footer>
+			<div class="entry-content">
+				{{ content }}
+			</div>
 		</article>
 
 		<nav id="site-nav">
 			<h1>Contents</h1>
+
 			<ul>
-			{% for page in site.html_pages %}
-				{% unless page.noindex %}
-					<li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
-				{% endunless %}
-			{% endfor %}
+				<li class="link-home"><a href="/">Home</a></li>
+				{% for page in site.guidebook %}
+					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+				{% endfor %}
+				<li class="link-contribute"><a href="/contribute.html">Contribute</a></li>
 			</ul>
 		</nav>
+
+		<footer class="meta">
+			<p><a href="{{ site.github.repository_url }}/blob/master/docs/{{ page.path }}">Edit this page on GitHub</a></p>
+		</footer>
 	</div>
 </body>
 </html>
