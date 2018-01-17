@@ -43,8 +43,7 @@
 
 			<ul>
 				<li class="link-home"><a href="{{ site.url }}">Home</a></li>
-				{% assign guidebook_pages = site.guidebook | sort: "weight" %}
-				{% for page in guidebook_pages %}
+				{% for page in site.guidebook %}
 					<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 				{% endfor %}
 			</ul>
