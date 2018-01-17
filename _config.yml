@@ -1,8 +1,9 @@
-source: docs
-destination: _site
 name: WordPress for Publishers
 url: https://wpforpublishers.com
 repository: kasparsd/wp-for-publishers
+
+source: docs
+destination: _site
 
 collections:
   guidebook:
