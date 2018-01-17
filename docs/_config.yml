@@ -1,4 +1,6 @@
 name: WordPress for Publishers
+url: https://wpforpublishers.com
+repository: https://github.com/kasparsd/wp-for-publishers
 
 defaults:
   - scope:
