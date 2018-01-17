@@ -1,4 +1,5 @@
 body { font:18px/1.5 sans-serif; margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; }
 pre { background: #eee; padding:0.5em; overflow:auto; }
 code { word-break: break-all; font-size:inherit; font-family: "Consolas", monospace; }
 iframe { border:1px solid #ddd; display:block; width:100%; }
@@ -13,6 +14,7 @@ p { margin:0 0 1em 0; }
 #header nav li { display:inline-block; }
 #header nav a { display:block; padding:0.5em 1em; }
 
+#site-nav { padding-top:1em; font-size: 0.9em; }
 #site-nav h1 { font-size:1.2em; }
 #site-nav li, #site-nav ul { margin:0; padding:0; display:block; }
 #site-nav a { display:block; padding:0.5em 0; }
