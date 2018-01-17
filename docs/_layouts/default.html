@@ -25,10 +25,6 @@
 			<h1 class="entry-title">{{ page.title }}</h1>
 
 			{{ content }}
-
-			<footer class="meta">
-				<p><a href="{{ site.github.repository_url }}/blob/master/docs/{{ page.path }}">Edit on GitHub</a></p>
-			</footer>
 		</article>
 
 		<nav id="site-nav">
@@ -41,6 +37,10 @@
 			{% endfor %}
 			</ul>
 		</nav>
+
+		<footer class="meta">
+			<p><a href="{{ site.github.repository_url }}/blob/master/docs/{{ page.path }}">Edit on GitHub</a></p>
+		</footer>
 	</div>
 </body>
 </html>
