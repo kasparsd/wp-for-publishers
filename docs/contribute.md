@@ -1,5 +1,5 @@
 ---
-title: Contribute
+title: How to Contribute
 ---
 
 The source of this website is available [on GitHub]({{ site.github.repository_url }}). To suggest a change please open [a new issue]({{ site.github.repository_url }}/issues/new) or create [a pull request](https://help.github.com/articles/creating-a-pull-request/).
@@ -14,7 +14,7 @@ The website is deployed and hosted by [Netlify](https://www.netlify.com).
 
 ## Local Development
 
- Requires [Ruby 2.1.0 or higher](https://www.ruby-lang.org/en/downloads/) which is available on MacOS by default.
+Requires [Ruby 2.1.0 or higher](https://www.ruby-lang.org/en/downloads/) which is available on MacOS by default.
 
 1. Clone the project repository:
 
