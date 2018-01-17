@@ -39,8 +39,9 @@
 
 			<ul>
 				<li class="link-home"><a href="{{ site.url }}">Home</a></li>
-				{% for page in site.guidebook %}
-					<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+				{% assign guidebook_pages = site.guidebook | sort: "weight" %}
+				{% for page in guidebook_pages %}
+					<li data-weight="{{ page.weight }}"><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 				{% endfor %}
 				<li class="link-contribute"><a href="{% link contribute.md %}">Contribute</a></li>
 			</ul>

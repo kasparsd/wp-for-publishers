@@ -12,3 +12,4 @@ defaults:
       path: ""
     values:
       layout: "default"
+      weight: 10
