@@ -1,6 +1,5 @@
 ---
 title: Why WordPress
-weight: 1
 ---
 
 - Free Software and developer availability. WordPress is an open-source and free software project which means there are a lot of talented and experienced software developers able to join and work on your project.
