@@ -20,6 +20,7 @@
 				{{ content }}
 			</div>
 
+			{% if page.next or page.previous %}
 			<nav class="page-rel-nav">
 				<ul>
 					{% if page.next.url %}
@@ -34,6 +35,7 @@
 					{% endif %}
 				</ul>
 			</nav>
+			{% endif %}
 		</article>
 
 		<nav id="site-nav">
