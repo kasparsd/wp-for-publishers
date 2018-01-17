@@ -5,6 +5,6 @@ This is the source of the [WordPress for Publishers Guidebook](https://wpforpubl
 
 ## How to Contribute
 
-See the [contributor guide](https://wpforpublishers.com/contribute.html).
+Please see the [contributor guide](https://wpforpublishers.com/contribute.html).
 
 The site is deployed and hosted by [Netlify](https://www.netlify.com).
