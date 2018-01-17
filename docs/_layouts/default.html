@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>{{ page.title }} &mdash; {{ site.name }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="{{ page.description | trim }}" />
+	<link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | relative_url }}?v={{ site.time | date: "%s" }}" />
+</head>
+<body class="page-{{ page.name | slugify }}">
+	<div id="soul">
+		<header id="header">
+			<h1><a href="{{ site.url }}">{{ site.name }}</a></h1>
+
+			<nav>
+				<ul>
+					<li>
+						<a href="{{ site.github.repository_url }}">Contribute on GitHub</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<article>
+			<h1 class="entry-title">{{ page.title }}</h1>
+
+			{{ content }}
+
+			<footer class="meta">
+				<p><a href="{{ site.github.repository_url }}/blob/master/docs/{{ page.path }}">Edit on GitHub</a></p>
+			</footer>
+		</article>
+
+		<nav id="site-nav">
+			<h1>Contents</h1>
+			<ul>
+			{% for page in site.html_pages %}
+				{% unless page.noindex %}
+					<li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+				{% endunless %}
+			{% endfor %}
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>

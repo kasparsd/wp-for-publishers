@@ -1,0 +1,7 @@
+name: WordPress for Publishers
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
