@@ -26,5 +26,7 @@ p { margin:0 0 1em 0; }
 #footer { font-size:0.9em; margin-top:2em; }
 
 .meta { font-size:0.8em; padding:1em 0; margin:1.5em 0; }
+.page-rel-nav { margin:2em 0; }
+.page-rel-nav ul, .page-rel-nav li { display:block; margin:0; padding:0; }
 
 .page-index-md .entry-title { display:none; }

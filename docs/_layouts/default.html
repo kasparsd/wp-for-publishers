@@ -19,6 +19,19 @@
 			<div class="entry-content">
 				{{ content }}
 			</div>
+
+			<nav class="page-rel-nav">
+				{% if page.next.url %}
+				<li class="next">
+					Next: <a href="{{ page.next.url }}" rel="next">{{ page.next.title }}</a>
+				</li>
+				{% endif %}
+				{% if page.previous.url %}
+				<li class="prev">
+					Previous: <a href="{{ page.previous.url }}" rel="prev">{{ page.previous.title }}</a>
+				</li>
+				{% endif %}
+			</nav>
 		</article>
 
 		<nav id="site-nav">
