@@ -25,11 +25,11 @@
 			<h1>Contents</h1>
 
 			<ul>
-				<li class="link-home"><a href="/">Home</a></li>
+				<li class="link-home"><a href="{{ site.url }}">Home</a></li>
 				{% for page in site.guidebook %}
-					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+					<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 				{% endfor %}
-				<li class="link-contribute"><a href="/contribute.html">Contribute</a></li>
+				<li class="link-contribute"><a href="{% link contribute.md %}">Contribute</a></li>
 			</ul>
 		</nav>
 
