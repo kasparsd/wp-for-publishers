@@ -15,7 +15,7 @@ p { margin:0 0 1em 0; }
 #header nav a { display:block; padding:0.5em 1em; }
 
 #site-nav { padding-top:1em; font-size: 0.9em; }
-#site-nav h1 { font-size:1.2em; }
+#site-nav h1 { font-size:1em; }
 #site-nav li, #site-nav ul { margin:0; padding:0; display:block; }
 #site-nav a { display:block; padding:0.5em 0; }
 #site-nav li ul { margin-left:1em; }
