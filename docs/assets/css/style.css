@@ -8,6 +8,8 @@ iframe { border:1px solid #ddd; display:block; width:100%; }
 dd { margin-bottom:1em; }
 p { margin:0 0 1em 0; }
 
+#soul { max-width:36em; margin:0 auto; padding:0 1em; }
+
 #header { padding:1em 0; }
 #header h1 { font-size:1em; margin:0; display:inline-block; }
 #header h1 a { color:inherit; text-decoration:none; }
@@ -16,7 +18,7 @@ p { margin:0 0 1em 0; }
 #header nav li { display:inline-block; }
 #header nav a { display:block; padding:0.5em 1em; }
 
-#site-nav { padding:1.25em; font-size: 0.9em; border:1px solid #ddd; }
+#site-nav { padding:1.25em; border:1px solid #ddd; }
 #site-nav h1 { font-size:1em; margin-top:0; }
 #site-nav li, #site-nav ul { line-height:1; margin:0; padding:0; display:block; }
 #site-nav a { display:block; padding:0.5em 0; }
@@ -24,10 +26,12 @@ p { margin:0 0 1em 0; }
 
 #content-wrap { margin-bottom:3em; }
 
-#soul { max-width:36em; margin:0 auto; padding:0 1em; }
-#footer { font-size:0.9em; margin-top:2em; }
+.meta { padding:1em 0; margin:1.5em 0; }
+.meta ul, .meta li { line-height:1; margin:0; padding:0; display:block; }
+.meta ul { margin-left:-0.5em; }
+.meta li { display:inline-block; }
+.meta a { display:block; padding:0.5em; }
 
-.meta { font-size:0.8em; padding:1em 0; margin:1.5em 0; }
 .page-rel-nav { margin:2em 0; }
 .page-rel-nav ul, .page-rel-nav li { display:block; margin:0; padding:0; }
 

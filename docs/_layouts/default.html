@@ -47,13 +47,19 @@
 				{% for page in guidebook_pages %}
 					<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 				{% endfor %}
-				<li class="link-contribute"><a href="{% link contribute.md %}">Contribute</a></li>
 			</ul>
 		</nav>
 
-		<footer class="meta">
-			<p><a href="{{ site.github.repository_url }}/blob/master/docs/{{ page.path }}">Edit this page on GitHub</a></p>
-		</footer>
+		<nav class="meta">
+			<ul>
+				<li class="link-contribute">
+					<a href="{% link contribute.md %}">How to Contribute</a>
+				</li>
+				<li class="link-edit-page">
+					<a href="{{ site.github.repository_url }}/blob/master/docs/{{ page.path }}">Edit this page on GitHub</a>
+				</li>
+			</ul>
+		</nav>
 	</div>
 </body>
 </html>
