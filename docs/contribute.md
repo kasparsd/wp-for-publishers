@@ -33,3 +33,8 @@ Requires [Ruby 2.1.0 or higher](https://www.ruby-lang.org/en/downloads/) which i
        $ bundle exec jekyll serve
 
 Now the development website should be available at [http://127.0.0.1:4000](http://127.0.0.1:4000)
+
+
+## Why not WordPress?
+
+Storing the content of this website on a public GitHub repository encourages contributions from the wider community which is one of the project goals.
